@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 import Pokedex from './components/Pokedex';
+import pokemonList from './data';
 
 function App() {
   return (
-
-    <div>
-      <h1>Exercise - Pokedex</h1>
-      <Pokedex />
+    <div className="App">
+      <Pokedex pokemonList={ pokemonList } />
     </div>
   );
 }
